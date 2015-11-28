@@ -1,0 +1,84 @@
+md-checkbox.md-checked.green .md-icon {
+ background-color: rgba(0, 255, 0, 0.87);
+}
+
+.listdemoListControls md-divider {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+.listdemoListControls md-list-item > p, .listdemoListControls md-list-item > .md-list-item-inner > p, .listdemoListControls md-list-item .md-list-item-inner > p, .listdemoListControls md-list-item .md-list-item-inner > .md-list-item-inner > p {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */ }
+
+
+  #map{
+    /*width: 645px;*/
+    width:100%;
+    height: 645px;
+    margin-left: 10px;
+    /*position: relative;*/
+    
+}
+.altura-mapa {
+    height: calc(100% - 244px);
+    margin: 0px 10px 0px 10px;
+}
+
+.nav-text{
+	color:#FFF;
+}
+
+a {
+	color:#FFF;
+}
+
+a :hover {
+  color:yellow;
+}
+.h3t {
+  /*color: red !important;*/
+}
+
+
+span {
+	color:#eeb432;
+}
+
+.box{
+	background-color: #000;
+	color: red;
+	
+}
+
+
+
+@import '//fonts.googleapis.com/css?family=Bangers';
+
+body { margin:0; }
+.wrap {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:300px;
+  background:transparent;
+}
+.time-to {
+  text-align:center;
+  font-family:Bangers;
+  color:white;
+  font-size:35px;
+  letter-spacing:2px;
+  color:red !important;
+  top:80px;
+  height: 100%;
+  span {
+    display:block;
+    font-size:80px;
+    color:red !important;
+  }
+}

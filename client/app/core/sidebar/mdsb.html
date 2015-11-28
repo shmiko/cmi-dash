@@ -1,0 +1,84 @@
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+
+<div ng-app="sidenavDemo1" ng-controller="AppCtrl" layout="column" layout-fill>
+  <section layout="row" flex>
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sd')">
+      <md-toolbar class="md-theme-indigo" layout="row">
+        <h1 class="md-toolbar-tools">Sidenav Left</h1>
+        <span flex>
+        <md-menu>
+      <md-button aria-label="Open phone interactions menu" class="md-icon-button" ng-click="ctrl.openMenu($mdOpenMenu, $event)">
+        <md-icon md-menu-origin class="material-icons">phone</md-icon>
+      </md-button>
+      <md-menu-content width="4">
+        <md-menu-item>
+          <md-button ng-click="ctrl.redial($event)">
+            <md-icon md-svg-icon="call:dialpad" md-menu-align-target></md-icon>
+            Redial
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button disabled="disabled" ng-click="ctrl.checkVoicemail()">
+            <md-icon md-svg-icon="call:voicemail"></md-icon>
+            Check voicemail
+          </md-button>
+        </md-menu-item>
+        <md-menu-divider></md-menu-divider>
+        <md-menu-item>
+          <md-button ng-click="ctrl.toggleNotifications()">
+            <md-icon md-svg-icon="social:notifications-{{ctrl.notificationsEnabled ? 'off' : 'on'}}"></md-icon>
+            {{ctrl.notificationsEnabled ? 'Disable' : 'Enable' }} notifications
+          </md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu> 
+      </md-toolbar>
+      <md-content class="md-padding" ng-controller="LeftCtrl">
+        <md-button ng-click="close()" class="md-primary" hide-gt-md>
+          Close Sidenav Left
+        </md-button>
+        <p hide-sd show-gt-sd>
+          This is where the menu items wil be .
+        </p>
+        <p> 
+        The "right" sideNav is open = {{isOpen()}} </p>
+      </md-content>
+    </md-sidenav>
+    <md-content flex class="md-padding">
+      <div layout="row" layout-fill layout-align="center center">
+        <p>
+        The left sidenav will 'lock open' on a medium (>=960px wide) device.
+        </p>
+        <div>
+          <md-button ng-click="toggleLeft()" class="md-primary" hide-gt-sd>
+            Toggle left
+          </md-button>
+          <md-button ng-click="open()" class="md-primary">
+            Open Sidenav Left
+          </md-button>
+        </div>
+        <div>
+          <md-button ng-click="toggleRight()" class="md-primary" hide-gt-sd>
+            Toggle right
+          </md-button>
+          <md-button ng-click="open()" class="md-primary">
+            Open Sidenav Right
+          </md-button>
+        </div>
+      </div>
+    </md-content>
+    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right" md-is-locked-open="$mdMedia('gt-sd')">
+      <md-toolbar class="md-theme-light">
+        <h1 class="md-toolbar-tools">Sidenav Right</h1>
+      </md-toolbar>
+      <md-content ng-controller="RightCtrl" class="md-padding">
+        <md-button ng-click="close()" class="md-primary">
+          Close Sidenav Right
+          The "left" sideNav is open = {{isOpen()}} </p>
+        </md-button>
+
+      </md-content>
+    </md-sidenav>
+  </section>
+</div>

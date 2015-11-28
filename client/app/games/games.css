@@ -1,0 +1,48 @@
+section {
+  font-size: 1.4em;
+    text-align: center;
+    width: 80%;
+    /* left: 60px; */
+    float: right;
+}
+
+.header {
+  margin-top: 10px;
+}
+.board {
+  line-height: 30px; 
+  width: 91px; 
+  margin: 15px auto 8px auto;  
+}
+.tile {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px;
+}
+.choice {
+  cursor: pointer;
+}
+.choices {
+}
+
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+    /*width: 70%;
+    width: 0%;*/
+     /*float: left; */
+    }
+
+li{
+  width:100%;
+}
+
+button{
+  color:#9022cc;
+}
+
+input {
+  color:#000000;
+  background-color: #a8e3f7;
+}

@@ -1,0 +1,38 @@
+﻿
+<div class="wwa-inventory-widget">
+
+    <div class="wwa-inventory-heading">
+        <!-- <img class="wwa-inventory-icon" ng-src="../content/images/inventory-icon.png" alt="inventory" /> -->
+        <div class="wwa-inventory-icon"><ng-md-icon icon="satellite" size="38"></ng-md-icon></div>
+        <span class="www-inventory-title">Upcoming Places</span>
+    </div>
+
+    <div class="wwa-inventory-body" ng-style="selectedLocation != null && {'background-image': 'url(/../content/images/' + selectedLocation.image + ')'}">
+        <div class="wwa-inventory-area">
+
+            <div class="wwa-inventory-river-name">
+                {{ selectedLocation.name }}
+            </div>
+
+            <div class="wwa-inventory-item">
+                <img src="../content/images/guide-icon.png" />
+                <span class="wwa-inventory-amount">{{selectedLocation.days}}</span>
+                <span class="wwa-inventory-caption">DAYS</span>
+            </div>
+            <div class="wwa-inventory-item">
+                <img src="../content/images/vest-icon.png" />
+                <span class="wwa-inventory-amount">{{selectedLocation.events}}</span>
+                <span class="wwa-inventory-caption">EVENTS</span>
+            </div>
+            <div class="wwa-inventory-item">
+                <img src="../content/images/raft-icon.png" />
+                <span class="wwa-inventory-amount">{{selectedLocation.todos}}</span>
+                <span class="wwa-inventory-caption">TODO</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+

@@ -1,0 +1,113 @@
+﻿
+ps-dashboard {
+    font-size: 44px;
+    margin: 0;
+    width: 100%;
+}
+
+.btn-group, .btn-group-vertical {
+     position: absolute; 
+     display: inline-block; 
+     vertical-align: middle; 
+}
+
+.gridster .gridster-item {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    overflow: hidden;
+}
+
+.ps-widget-header {
+    position: relative;
+    color: white;
+    background-color: #444;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    min-height: 30px;
+    padding: 8px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+}
+
+.ps-widget-header-buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ps-widget-header-buttons .btn {
+    margin: 4px;
+    margin-top: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.ps-widget-body {
+    position: relative;
+
+}
+
+.ps-dashboard-header {
+    font-size: 1.2em;
+    border-bottom: 1px solid #444;
+    color: rgb(0, 23, 148);
+    background-color: #61C319;
+    margin: -20px;
+    margin-bottom: 20px;
+    min-height: 50px;
+    padding: 8px;
+    padding-left: 20px;
+}
+
+.ps-dashboard-controls {
+    float: right;
+}
+
+
+.ps-dashboard-controls .btn{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: transparent;
+    border: 2px solid rgb(245, 5, 5);
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.ps-widget-menu-area {
+    position: relative;
+    top: 0;
+    right: 8px;
+    font-size: 22px;
+    float: right;
+}
+
+.ps-widget-menu-area .dropdown-menu {
+    left: -20px;
+    padding-left: 15px;
+}
+
+.ps-widget-menu-area a {
+    color: white;
+}
+
+.ps-widget-menu-area i {
+    cursor: pointer;
+}
+
+.dropdown-backdrop {
+    position: static;
+}

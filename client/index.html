@@ -1,0 +1,289 @@
+<!doctype html>
+<!-- Declares meanMapApp as the starting Angular module -->
+<html class="no-js" data-ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>CalMapIt</title>
+    <meta name="description" content="A MEAN Calendar, Map, Itinrerary MashApp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- All CSS -->
+    <link href="ext-modules/psFramework/psFramework.css" rel="stylesheet" />
+    <link href="ext-modules/psMenu/psMenu.css" rel="stylesheet" />
+    <link href="ext-modules/psDashboard/psDashboard.css" rel="stylesheet" />
+    <link href="content/angular-gridster.min.css" rel="stylesheet" />
+    
+    
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+<!-- <link rel="stylesheet" href="app/core/layout/footer.css"/> -->
+    <!-- <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.gitcdn.xyz/cdn/angular/bower-material/v1.0.0-rc4/angular-material.css">
+    <link rel="stylesheet" href="app/calendar/calendarDemo.css" />
+    <link rel="stylesheet" href="app/itinerary/itinerary.css" />
+    <!-- <link rel="stylesheet" href="//codepen.io/assets/reset/normalize.css"> -->
+    <link rel="stylesheet" href="app/travel/travel-cmi.css" />
+    <link rel="stylesheet" href="app/introduction/intro.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="app/twitter/ng-twitter.css"> -->
+    <link rel="stylesheet" href="app/calmap/calmap.css">
+    <link rel="stylesheet" href="app/form/form.css">
+    <link rel="stylesheet" href="app/rss/rss.css">
+    <link rel="stylesheet" href="app/form/form_md.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <link href="app/widgets/wwaTemperature/wwaTemperature.css" rel="stylesheet" />
+    <link href="app/widgets/wwaInventory/wwaInventory.css" rel="stylesheet" />
+    <link href="app/widgets/wwaEmployee/wwaEmployee.css" rel="stylesheet" />
+
+<!-- <link rel="stylesheet" href="app/atlas/atlas.css"> -->
+<!-- <link rel="stylesheet" href="app/core/sidebar/sidebar-right.css"> -->
+     <!-- <link rel="stylesheet" href="app/core/sidebar/sidebar-left.css">   -->
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.gitcdn.xyz/cdn/angular/bower-material/v1.0.0-rc4/angular-material.css"> -->
+     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="app/todo/todo3.css">
+    <link rel="stylesheet" href="app/instagram/instagram.css">
+    <link rel="stylesheet" href="app/games/games.css">
+    <link rel="stylesheet" href="app/maps/maps.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110131/responsive.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="http://cdn.jsdelivr.net/foundation/4.3.1/css/foundation.min.css"> -->
+    <link rel="stylesheet" href="app/blogger/blogger.css">
+    <link rel="stylesheet" href="app/wikipedia/wikipedia.css">
+<!-- <link rel="stylesheet" href="app/wikipedia/angular-szn-autocomplete.css"> -->
+    <link rel="stylesheet" href="app/twitter/twitter2.css">
+<!-- <link rel="stylesheet" href="app/gallery/gallery.css"> -->
+    <!-- <link rel="stylesheet" href="app/maps/maps.css"> -->
+    <script type="../bower_components/fullcalendar/dist/fullcalendar.css"></script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+    <script src="http://hammerjs.github.io/dist/hammer.js"></script>
+<!-- <script data-require="angular.js@1.3.x" src="https://code.angularjs.org/1.3.0-rc.5/angular.js" data-semver="1.3.0-rc.5"></script> -->
+<!-- <script data-require="angular-aria@1.3.x" src="https://code.angularjs.org/1.3.0-rc.5/angular-aria.js" data-semver="1.3.0-rc.5"></script> -->
+<!-- <script data-require="angular-animate@1.3.x" src="https://code.angularjs.org/1.3.0-rc.5/angular-animate.js" data-semver="1.3.0-rc.5"></script> -->
+    <!-- ALL JS -->
+<!-- <script data-require="jquery.js@2.1.4" data-semver="2.1.4" src="../bower_components/jquery/dist/jquery.js"></script> -->
+<!-- <script data-require="jquery.js@2.1.4" data-semver="2.1.4" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+<!-- <script data-require="angular.js@1.4.6" data-semver="1.4.6" src="../bower_components/angular-material/angular-material.js"></script> -->
+    <script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script data-require="angular-route.js@1.4.6" data-semver="1.4.7" src="../bower_components/angular-route/angular-route.js"></script>
+    <script type="../bower_components/angular-messages/angular-messages.js"></script>
+    <script data-require="angularjs-geolocation.min.js@0.1.1" data-semver="0.1.1" src="../bower_components/angularjs-geolocation/dist/angularjs-geolocation.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-aria.min.js"></script>
+    <script src="https://cdn.gitcdn.xyz/cdn/angular/bower-material/v1.0.0-rc4/angular-material.js"></script>
+<!-- <script type="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script> -->
+    <script data-require="moment.js@2.10.6" data-semver="2.10.6" src="../bower_components/moment/moment.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="../bower_components/angular/angular-resource.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="../bower_components/iso-3166-country-codes-angular/iso-3166-country-codes-angular.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script> -->
+    <script src="../bower_components/easing.js"></script>
+    <script type="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/assets-cache.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.6.0/angular-material-icons.min.js"></script> 
+    <!-- Vendor JS -->
+    <!-- Holder JS -->
+
+    <script data-require="TweenMax.min.js@1.18.0" data-semver="1.18.0" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script data-require="TweenMax.min.js@1.18.0" data-semver="1.18.0" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ThrowPropsPlugin.min.js"></script>
+    <script data-require="TweenMax.min.js@1.18.0" data-semver="1.18.0" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/utils/Draggable.min.js"></script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script> -->
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-sanitize.min.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="../bower_components/ngmap/build/scripts/ng-map.min.js"></script>
+    <script data-require="holder.js@2.9.7" data-semver="2.9.7" src="../bower_components/holderjs/holder.js"></script>
+    <!-- Google Maps/Cal API -->
+    <script data-require="gapi.js@3" data-semver="v3" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDyuMEpvjNHZS8ACf1rJPhxMOODrfJyL4&libraries=placeses,visualization,drawing,geometry,places"></script>
+    <script data-require="calendar.js" data-semver="v3" src="../bower_components/angular-ui-calendar/src/calendar.js"></script>
+<script data-require="ui-bootstrap-tpls-0.13.0.js@0.13.0" data-semver="0.13.0" src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- <script data-require="tweenmax.js" data-semver="1" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+<script data-require="scrollmagic.js" data-semver="2.0.3" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+<script data-require="animation.gasp.js" data-semver="2.0.3" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+<script data-require="DrawSVGPlugin.js" data-semver="1" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.js?r=11"></script>
+<script src="//assets.codepen.io/assets/common/stopExecutionOnTimeout-f961f59a28ef4fd551736b43f94620b5.js"></script>     -->
+<!-- Modernizr -->
+<!-- <script data-require="modernizr@3.0.0" data-semver="3.0.0" src="../bower_components/modernizr/bin/modernizr"></script> -->
+    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+    <script src="//use.edgefonts.net/vast-shadow:n4:all.js"></script>
+    <script src="//use.edgefonts.net/vast-shadow:n4:all;megrim.js"></script>
+<!-- <script type="../bower_components/angular-messages/angular-messages.min.js"></script> -->
+    <!-- JS Source -->
+    <!-- Google Calendar Support -->
+    <script data-require="fullcalendar.js@v2.3.2" data-semver="v2.3.2" src="../bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <script data-require="gcal.js@v2.3.2" data-semver="v2.3.2" src="../bower_components/fullcalendar/dist/gcal.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.6.0/annyang.min.js"></script>
+    <script type="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script>
+    <script src="content/angular-gridster.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.js"></script>
+<!-- JQuery to invoke include files until angular is hooked up -->
+    <!--<script>-->
+        <!--$(function(){-->
+            <!--$("#view").load("app/core/layout/events.html");-->
+            <!--$("#footer").load("app/core/layout/footer.html");-->
+        <!--});-->
+    <!--</script>-->
+    <!-- App JS -->
+    <!-- App Root Module JS -->
+
+    <script type="text/javascript" src="../bower_components/angular-mocks/angular-mocks.js"></script> 
+<!-- <script src="http://maps.google.com/maps/api/js?libraries=placeses,visualization,drawing,geometry,places"></script> -->
+<!-- <script src="http://code.angularjs.org/1.3.15/angular.js"></script> -->
+    <script src="http://rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.js"></script>
+    <script data-require="app.module.js" data-semver="1" src="app/app.module.js"></script>
+    <script data-require="app.routes.js" data-semver="1" src="app/app.routes.js"></script>
+    <script src="app/app.controller.js"></script>
+    
+    <script src="ext-modules/psMenu/psMenuModule.js"></script>
+    <script src="ext-modules/psMenu/psMenuController.js"></script>
+    <script src="ext-modules/psMenu/psMenuDirective.js"></script>
+    <script src="ext-modules/psMenu/psMenuItemDirective.js"></script>
+    <script src="ext-modules/psMenu/psMenuGroupDirective.js"></script>
+
+    <script src="ext-modules/psDashboard/psDashboardModule.js"></script>
+    <script src="ext-modules/psDashboard/psDashboardDirective.js"></script>
+    <script src="ext-modules/psDashboard/psWidgetBodyDirective.js"></script>
+
+    <script src="ext-modules/psFramework/psFrameworkModule.js"></script>
+    <script src="ext-modules/psFramework/psFrameworkController.js"></script>
+    <script src="ext-modules/psFramework/psFrameworkDirective.js"></script>
+    <script src="ext-modules/psFramework/psUserProfile/psUserProfileSmallDirective.js"></script>
+    <script src="ext-modules/psFramework/psUserProfile/psUserProfileDirective.js"></script>
+
+
+
+    <script type="http://codepen.io/jakealbaugh/pen/WvNjZB.js"></script>
+    <script type="https://rawgit.com/forwardadvance/ng-tweets/master/build/js/ng-tweets.js"></script>
+    <!-- App Modules JS -->
+    <script data-require="navbarController.js" data-semver="1" src="app/core/layout/navbarController.js"></script>
+    <script data-require="navbarController.js" data-semver="1" src="app/core/layout/footerController.js"></script>
+    <script data-require="navbarController.js" data-semver="1" src="app/core/sidebar/mdsb.js"></script>
+<!-- <script data-require="navbarController.js" data-semver="1" src="app/core/layout/core-back.js"></script> -->
+    <script data-require="queryController.js" data-semver="1" src="app/events/queryController.js"></script>
+    <script data-require="eventController.js" data-semver="1" src="app/events/eventController.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/calendar/calendar_mod_ctr.js"></script>
+<!-- <script data-require="itinerary.js" data-semver="1" src="app/itinerary/itinerary.js"></script> -->
+    <script src="app/directives/wwaDashboardDirective.js"></script>
+    <script src="app/directives/wwaGuidesDirective.js"></script>
+    <script src="app/directives/wwaLocationsDirective.js"></script>
+
+    <!-- widget JavaScript files -->
+    <script src="app/widgets/wwaTemperature/wwaTemperatureDirective.js"></script>
+    <script src="app/widgets/wwaInventory/wwaInventoryDirective.js"></script>
+    <script src="app/widgets/wwaEmployee/wwaEmployeeDirective.js"></script>
+
+    <!-- setting dialogs -->
+    <script src="app/dialogs/wwaSelectEmployeeController.js"></script>
+    <script src="app/dialogs/wwaSelectLocationController.js"></script>
+
+<!-- <script data-require="calendar_mod_ctr.js" data-semver="1" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110131/responsive.js"></script> -->
+    <script data-require="gservice.js" data-semver="1" src="app/services/gservice.js"></script>
+    <script src="app/services/dataService.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/calmap/controllers.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/calmap/functions.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/weather/services.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/weather/controllers.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/weather/filters.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/weather/directives.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/atlas/atlas.js"></script>
+<!-- <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/blog/blog.js"></script> -->
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/todo/todo.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/instagram/instagram.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/blogger/blogger.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/form/form_md.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/rss/rss.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/rss/rss2.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/wikipedia/wikipedia.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/games/games.js"></script>
+<script data-require="calendar_mod_ctr.js" data-semver="1" src="app/twitter/twitter.js"></script>
+<!-- <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/wikipedia/angular-szn-autocomplete.js"></script> -->
+<!-- <script type="text/javascript" src="app/twitter/ng-twitter.js"></script> -->
+    <script src="https://cdn.blockspring.com/blockspring.js"></script>
+    <script type="text/javascript" src="app/maps/maps.js"></script>
+    <script type="text/javascript" src="app/maps/directions.js"></script>
+<!-- <script type="text/javascript" src="app/gallery/gallery.js"></script> -->
+</head>
+<style>
+html{
+    /*height:100%;*/
+    /*background-color: #000000;*/
+}
+body{
+  color:#000000;
+  position: relative;
+  background-color: #FFF !important;
+
+}
+.container-fluid {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    /*background-color: #FF30BB !important;*/
+    height:100vh;
+}
+</style>
+    <!-- <body data-ng-cloak="">
+        <nav data-ng-include="'app/core/layout/nav.html'"></nav>
+        <nav data-ng-include="'app/core/sidebar/sidebar-right.html'"></nav>
+        <nav data-ng-include="'app/core/sidebar/sidebar-left.html'"></nav>
+        <div data-ui-view></div>
+        <footer data-ng-include="'app/core/layout/footer.html'"></footer>
+    </body>  -->   
+    <body class="container-fluid" ng-controller="appController">
+
+    <div ng-switch="state">
+        <div ng-switch-when="unauthorized" class="sign-in-form">
+            <h2>CalMapIt</h2>
+            <h4>Sign In</h4>
+            <form>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control"/>
+                </div>
+            </form>
+            <button class="btn btn-default" ng-click="signIn()">Sign In</button>
+        </div>
+        <div ng-switch-default>
+            <ps-framework title="CalMapIt Tripstomping Adventures"
+                          subtitle="Calendar Map Itinerary"
+                          icon-file="calmapit_icon.png"
+                          logo-file="calmapit_logo1.png">
+                <ps-menu>
+                    <ps-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></ps-menu-item>
+                    <ps-menu-item label="Calendar" icon="fa-location-arrow" route="locations"></ps-menu-item>
+                    <ps-menu-item label="Map" icon="fa-user" route="guides"></ps-menu-item>
+                    <ps-menu-item label="Itinerary" icon="fa-user" route="guides"></ps-menu-item>
+                    <ps-menu-group label="Travelling" icon="fa-gears">
+                        <ps-menu-item label="Find Places" icon="fa-unlink" route="rafts"></ps-menu-item>
+                        <ps-menu-item label="Get Directions" icon="fa-magic" route="paddles"></ps-menu-item>
+                        <ps-menu-item label="Local Info" icon="fa-life-ring" route="vests"></ps-menu-item>
+                    </ps-menu-group>
+                    <ps-menu-group label="Social" icon="fa-gears">
+                        <ps-menu-item label="Blog" icon="fa-unlink" route="calendar"></ps-menu-item>
+                        <ps-menu-item label="Photos" icon="fa-magic" route="paddles"></ps-menu-item>
+                        <ps-menu-item label="Facebook" icon="fa-life-ring" route="vests"></ps-menu-item>
+                    </ps-menu-group>
+                </ps-menu>
+            </ps-framework>
+        </div>
+    </div>
+
+
+</body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
