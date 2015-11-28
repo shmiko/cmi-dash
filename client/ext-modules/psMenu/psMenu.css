@@ -78,7 +78,7 @@
 }
 
 .ps-selectable-item:hover {
-    background-color: #71A877;
+    /*background-color: #71A877;*/
     color:#9E20DD;
 }
 
@@ -89,6 +89,7 @@
 .ps-menu-active-indicator {
     float: right;
     color: #0A05B3;
+    margin-right: 0;
     margin-right: 0;
     margin-top: 8px;
 }
