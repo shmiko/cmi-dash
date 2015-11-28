@@ -149,6 +149,47 @@ angular.module('app')
                 config: {
                     template: '<wwa-guides></wwa-guides>'
                 }
+            },
+            {
+                url: '/quiz',
+                config: {
+                    templateUrl: 'app/games/quiz.html',
+                }
+            },
+            {
+                url: '/posts',
+                config: {
+                    templateUrl : 'app/blogger/pages/blog.html',
+                    controller  : 'bloggerController'
+                }
+            },
+            {
+                url: '/rss',
+                config: {
+                    templateUrl : 'app/rss/rss.html',
+                    controller: 'FeedController'
+                }
+            },
+            {
+                url: '/wikipedia',
+                config: {
+                    templateUrl : 'app/wikipedia/wikipedia.html',
+                    controller: 'wikiCtrl'
+                }
+            },
+            {
+                url: '/directions',
+                config: {
+                    templateUrl : 'app/maps/directions.html',
+                    controller: 'directionsController'
+                }
+            },
+            {
+                url: '/maps',
+                config: {
+                    templateUrl : 'app/maps/maps.html',
+                    controller: 'PrincipalController'
+                }
             }
   
         ];
