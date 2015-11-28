@@ -1,7 +1,7 @@
 ﻿
 .ps-menu-area {
     position: relative;
-    background-color: rgba(91, 202, 115, 0.58);
+    background-color: rgb(159, 224, 173) !important;
     color: #2B0169;
     padding-left: 0;
     /*font-size: 1.3em;*/
