@@ -1,8 +1,13 @@
 ﻿
 .ps-title-bar {
-    background-color: #AE04F1;
+ /*   background-color: #1C7489;
     padding: 0 15px;
     border-bottom: 1px solid black;
+    color: #AEE9F7;*/
+    background-color: #6A219C;
+    padding: 0 15px;
+    border-bottom: 7px solid #9FE0AD
+    color: #B8BFF1;
 }
 
 .ps-logo-area {
@@ -37,7 +42,7 @@
 
 
 .ps-logo-title {
-    color: #111;
+    color: #7FE3A1;
     margin-top: 6px;
     font-size: 22px;
     /*display: none;*/
@@ -46,6 +51,7 @@
 .ps-logo-subtitle {
     font-size: 13px;
     margin-top: -13px;
+    color: #9FE0AD;
     /*display: none;*/
 }
 
@@ -110,6 +116,33 @@
         margin:8px;
         float: right;
     }
+
+    .backgroundI {
+
+        /*background-image: url(../../content/images/faded.png);
+        background-size: cover;
+        */
+        position: relative;
+        overflow: hidden;
+        background-color: #0D021F;
+       /* -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        transform: rotate(30deg);*/
+    }
+
+    .backgroundI:before
+        {
+           background-color: #0D021F;
+           /* background: url(../../content/images/faded.png) 0 0 repeat;
+            -webkit-transform: rotate(-30deg);
+            -moz-transform: rotate(-30deg);
+            -ms-transform: rotate(-30deg);
+            -o-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+            top: -50%;*/
+        }
 }
 
 .ps-collapsed-menu {
@@ -130,9 +163,24 @@
 .ps-view {
     margin-left: 200px;
     padding: 20px;
-    background-color: #000;
+    background-color: ##240B35;;
     min-height: 100vh;
     overflow: auto;
+}
+.btn-default:hover {
+    color: #6A219C !important;
+    background-color: #9FE0AD !important;
+    border-color: #6A219C !important;
+}
+.btn-default {
+    color: #8C25DD !important;
+    background-color: #71DD69 !important;
+    border-color: #6A219C !important;
+}
+
+
+span {
+    color: #9FE0AD !important;
 }
 
 .ps-view-full-width {
@@ -142,7 +190,7 @@
 
 .ps-user-profile {
     background-color: transparent;
-    color: white;
+    color: #300B6C;
     width: 200px;
     min-height: 120px;
     padding-top: 10px;

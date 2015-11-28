@@ -49,21 +49,40 @@ ps-dashboard {
 
 .ps-dashboard-header {
     font-size: 1.2em;
-    border-bottom: 1px solid #444;
-    color: rgb(0, 23, 148);
-    background-color: #61C319;
+    /*border-bottom: 1px solid #444;*/
+    border-top: 7px solid #9FE0AD;
+    border-bottom: 7px solid #9FE0AD;
+    /*color: rgb(0, 23, 148);*/
+    /*background-color: #61C319;*/
+/*    color: #390984;
+    background-color: #B3002A;*/
+/*    color: #2B39A0;
+    background-color: #6470C9;*/
+    color: #2B39A0;
+    background-color: #8993DE;
     margin: -20px;
     margin-bottom: 20px;
     min-height: 50px;
     padding: 8px;
     padding-left: 20px;
+
 }
 
 .ps-dashboard-controls {
     float: right;
 }
-
-
+.caret{
+    display: inline-block;
+    color: rgb(255, 251, 1);
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
 .ps-dashboard-controls .btn{
     display: inline-block;
     padding: 6px 12px;
@@ -82,7 +101,7 @@ ps-dashboard {
     -ms-user-select: none;
     user-select: none;
     background-image: transparent;
-    border: 2px solid rgb(245, 5, 5);
+    border: 2px solid #2B39A0;
     border-radius: 4px;
     background-color: transparent;
 }

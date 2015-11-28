@@ -3,7 +3,11 @@
  * Docs & License: http://arshaw.com/fullcalendar/
  * (c) 2013 Adam Shaw
  */
-
+.btn-success {
+    color: #0D021F;
+    background-color: #9FE0AD;
+    border-color: #9FE0AD;
+}
 
 .fc {
 	direction: ltr;
@@ -58,7 +62,25 @@ body .fc { /* extra precedence to overcome jqui */
 	filter: alpha(opacity=30); /* for IE */
 }
 
+.fc-next-button{
+	background-color: #5ADD64 !important;
+	color:#520F8D !important;
+}
 
+.fc-next-button:hover{
+	background-color: #333 !important;
+	color:#FFFA06 !important;
+}
+
+.fc-prev-button{
+	background-color: #5ADD64 !important;
+	color:#520F8D !important;
+}
+
+.fc-prev-button:hover{
+	background-color: #333 !important;
+	color:#FFFA06 !important;
+}
 /* Icons (inline elements with styled text that mock arrow icons)
 --------------------------------------------------------------------------------------------------*/
 
