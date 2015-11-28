@@ -5,7 +5,7 @@
 // -----------------------------------------------------
 var express         = require('express');
 var mongoose        = require('mongoose');
-var port            = process.env.PORT || 8080;
+var port            = process.env.PORT || 80;
 var database        = require('./config/config');
 var morgan          = require('morgan');
 var bodyParser      = require('body-parser');
