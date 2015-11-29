@@ -16,12 +16,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*position: absolute;*/
+    position: absolute;
     right: 0px;
-    top: 0px;
-    /*height: 100%;*/
+    /* top: 0px; */
+    bottom: 80px;
+    /* height: 100%; */
     width: 60px;
-    background: #737ED9;
+    background: transparent;
   }
   
   
@@ -33,6 +34,7 @@ body {
       left: 0px;
       transition: all 0.4s ease;
       cursor: pointer;
+      background: transparent;
     }
 
     .sidenav .nav.active {
@@ -40,7 +42,7 @@ body {
     }
 
     .sidenav .nav:hover {
-      left: -85px;      /* Border width*2 */
+      left: -80px;      /* Border width*2 */
     }
 
       .sidenav .description, .sidenav .icon {

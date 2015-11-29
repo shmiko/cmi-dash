@@ -1,5 +1,5 @@
 ﻿
-<div class="ps-title-bar">
+<div class="header">
     <div class="row">
         <div class="ps-logo-area col-sm-6 col-md-8">
             <img class="ps-icon" ng-src="../content/images/{{ iconFile }}" />
@@ -32,9 +32,9 @@
 </div>
 <nav data-ng-include="'app/core/sidebar/sidebar-right.html'"></nav>
         
-<div ng-view class="ps-view backgroundI"
+<div ng-view class="ps-view backgroundI" id="content"
         ng-class="{'ps-view-full-width': !isMenuVertical || !isMenuVisible}">
 </div>
 
-<footer data-ng-include="'app/core/layout/footer.html'"></footer>
+<footer class="footer" data-ng-include="'app/core/layout/footer.html'"></footer>
 

@@ -12,7 +12,7 @@ angular.module('app').directive('wwaDashboard', ['$localStorage',
 
             scope.gridsterOpts = {
                 columns: 12,
-                margins: [20, 20],
+                margins: [5, 5],
                 outerMargin: false,
                 pushing: true,
                 floating: false,
