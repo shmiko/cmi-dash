@@ -14,6 +14,7 @@ angular.module('psDashboard').directive('psWidgetBody',
                     scope.widgets.splice(scope.widgets.indexOf(scope.item), 1);
                 };
 
+
                 scope.settings = function () {
                     var options = {
                         templateUrl: scope.item.widgetSettings.templateUrl,
