@@ -1,0 +1,93 @@
+db.messages.aggregate([
+	{"$unwind":"$headers.To"},
+	{"$group":{"_id":"$headers.To","count":{$sum:1}}},
+	{"$sort":{"count":-1}},
+	{"$project":{"_id":0,"headers.To":1,"count":1,"headers.From":1}}
+	])
+
+
+	db.messages.aggregate([
+	{"$unwind":"$headers.To"},
+	{"$group":{"_id":"$headers.To","count":{$sum:1}}},
+	{"$sort":{"count":1}},
+	{"$project":{"_id":0,"headers.To":"$_id","count":1,"headers.From":1}}])
+	
+
+2.db.messages.find({
+'headers.From' : 'andrew.fastow@enron.com', 
+'headers.To' : 'jeff.skilling@enron.com'
+}).count()
+
+3.
+db.messages.aggregate([
+{"$unwind":"$headers.To"},
+{"$group":{"_id":{"from":"$headers.From","to":"$headers.To"},"count":{$sum:1}}},
+{"$sort":{"count":-1}},
+{"$limit":5}
+])
+4.
+db.messages.update({"headers.Message-ID": "<8147308.1075851042335.JavaMail.evans@thyme>"},
+                   {$addToSet:{"headers.To":"mrpotatohead@10gen.com"  }})
+
+
+5.
+
+
+
+            var int i =0;
+            DBCollection album = db.getCollection("albums");
+            DBCollection image = db.getCollection("images");
+            
+            DBCursor cur = image.find();
+            cur.next();
+            
+            while (cur.hasNext()){
+                Object id = cur.curr().get("_id");
+               DBCursor curalbum = album.find(new BasicDBObject("images", id));
+               if(!curalbum.hasNext()){
+                   image.remove(new BasicDBObject("_id", id));
+               }
+               cur.next();
+            }
+        }
+
+
+
+
+
+var cursor=db.images.find();
+cursor.next();
+while (cursor.hasNext()) { 
+    var doc = cursor.next(); 
+    var id = doc['id']; 
+    id;
+    var cursalbum = db.albums.find({"images": id});
+    if(!curalbum.hasNext()){
+       db.images.remove(doc);
+   } else {
+   cursor.next();
+   }
+ }
+
+db.messages.find({"headers.Date":{"$gt": new Date(2001,3,1)}},
+{"headers.From":1, _id:0}).sort({"headers.From":1}).explain()
+
+db.messagesfind( { 'headers.Date' : { '$gt' : new Date(2001,3,1) } }, { 'headers.From' : 1, '_id' : 0 } ).sort( { 'headers.From' : 1 } ).explain()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
