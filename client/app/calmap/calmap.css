@@ -115,6 +115,7 @@ div.row.calendar div.details h3 {
 
 div.container.calendar {
     padding-bottom: 32px;
+    float:left;
 }
 
 .box{
