@@ -339,6 +339,10 @@ angular.module('app')
                 url:'/dashboard',
                 template: '<wwa-dashboard></wwa-dashboard>'
             })
+            .state('yelp', {
+                url: 'app/yelp/yelp.html',
+                controller: 'yelpController'
+              })
             ;
        
         routes.forEach(function (route) {

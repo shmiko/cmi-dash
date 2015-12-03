@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({extended: true}));               // parse applica
 app.use(bodyParser.text());                                     // allows bodyParser to look at raw text
 app.use(bodyParser.json({ type: 'application/vnd.api+json'}));  // parse application/vnd.api+json as json
 app.use(methodOverride());
-
+//app.use('/api/bars', require('./api/bar'));
 // Routes
 // ------------------------------------------------------
 require('./routes/routes.js')(app);

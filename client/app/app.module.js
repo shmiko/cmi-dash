@@ -31,7 +31,8 @@
       "ngMdIcons",
       "ngMap",
       "psFramework", 
-      "ngStorage"
+      "ngStorage",
+      "whatstonightApp"
     ]);
 
      app.constant('config', {
