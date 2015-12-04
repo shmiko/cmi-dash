@@ -190,9 +190,17 @@ angular.module('app')
                     templateUrl : 'app/maps/maps.html',
                     controller: 'PrincipalController'
                 }
+            },
+            {
+                url: '/yelp',
+                config: {
+                    templateUrl : 'app/yelp/yelp.html',
+                    controller: 'yelpController'
+                }
             }
   
         ];
+
         $stateProvider
 
             .state('posts',{
@@ -339,10 +347,11 @@ angular.module('app')
                 url:'/dashboard',
                 template: '<wwa-dashboard></wwa-dashboard>'
             })
-            .state('yelp', {
-                url: 'app/yelp/yelp.html',
+            .state('yelp',{
+                url:'/yelp',
+                templateUrl : 'app/yelp/yelp.html',
                 controller: 'yelpController'
-              })
+            })
             ;
        
         routes.forEach(function (route) {

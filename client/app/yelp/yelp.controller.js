@@ -1,7 +1,4 @@
-'use strict';
-
-angular.module('whatstonightApp')
-  .controller('yelpController', function ($scope, $http, User, Auth) {
+function yelpController($scope, $http, User, Auth) {
     $scope.awesomeThings = [];
     $scope.getCurrentUser = Auth.getCurrentUser;
     $scope.isLoggedInAsync = Auth.isLoggedInAsync;
@@ -31,7 +28,6 @@ angular.module('whatstonightApp')
         $scope.bars = Bars;
         $scope.loading=false;
       });
-
     }
 
     $scope.isLoggedInAsync(
@@ -78,5 +74,10 @@ angular.module('whatstonightApp')
       })
       **/
     }
+}
+yelpController.$inject = ['$scope', '$http', 'User', 'Auth'];
+angular.module('whatstonightApp', []).controller('yelpController', yelpController);
 
-  });
+
+
+
