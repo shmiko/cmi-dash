@@ -1,7 +1,7 @@
 
 angular
   .module('imagegridApp')
-  .controller('imagegridAppController', function($scope) {
+  .controller('imagegridController', function($scope) {
 
     this.tiles = buildGridModel({
             icon : "avatar:svg-",
