@@ -66,6 +66,7 @@
     <script type="text/javascript" src="../bower_components/angular-mocks/angular-mocks.js"></script> 
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.6.0/annyang.min.js"></script>
     <script type="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/assets-cache.js"></script>
+    <script src="https://cdn.blockspring.com/blockspring.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script data-require="calendar.js" data-semver="v3" src="../bower_components/angular-ui-calendar/src/calendar.js"></script>
     <script data-require="TweenMax.min.js@1.18.0" data-semver="1.18.0" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/utils/Draggable.min.js"></script>
@@ -86,13 +87,11 @@
     <!-- <script data-require="calendar_mod_ctr.js" data-semver="1" src="../bower_components/ngmap/build/scripts/ng-map.min.js"></script> -->
     <script data-require="TweenMax.min.js@1.18.0" data-semver="1.18.0" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
     <script data-require="TweenMax.min.js@1.18.0" data-semver="1.18.0" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ThrowPropsPlugin.min.js"></script>
-<!-- <script type="http://codepen.io/jakealbaugh/pen/WvNjZB.js"></script> -->
-    
     <script data-require="ui-bootstrap-tpls-0.13.0.js@0.13.0" data-semver="0.13.0" src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.js"></script>
-    
     <script src="//use.edgefonts.net/vast-shadow:n4:all.js"></script>
     <script src="//use.edgefonts.net/vast-shadow:n4:all;megrim.js"></script>
     
+    <!-- <script type="http://codepen.io/jakealbaugh/pen/WvNjZB.js"></script> -->
     
     <!-- App Modules JS -->
    
@@ -117,16 +116,9 @@
     <script src="ext-modules/psFramework/psUserProfile/psUserProfileSmallDirective.js"></script>
     <script src="ext-modules/psFramework/psUserProfile/psUserProfileDirective.js"></script>
 
+    
 
-
-    <script data-require="navbarController.js" data-semver="1" src="app/core/layout/navbarController.js"></script>
-    <script data-require="navbarController.js" data-semver="1" src="app/core/layout/footerController.js"></script>
-    <script data-require="navbarController.js" data-semver="1" src="app/core/sidebar/mdsb.js"></script>
-    <!-- <script data-require="navbarController.js" data-semver="1" src="app/core/layout/core-back.js"></script> -->
-    <script data-require="queryController.js" data-semver="1" src="app/events/queryController.js"></script>
-    <script data-require="eventController.js" data-semver="1" src="app/events/eventController.js"></script>
-    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/calendar/calendar_mod_ctr.js"></script>
-    <!-- <script data-require="itinerary.js" data-semver="1" src="app/itinerary/itinerary.js"></script> -->
+    <!-- Directives -->
     <script src="app/directives/wwaDashboardDirective.js"></script>
     <script src="app/directives/wwaGuidesDirective.js"></script>
     <script src="app/directives/wwaLocationsDirective.js"></script>
@@ -140,32 +132,43 @@
     <script src="app/dialogs/wwaSelectEmployeeController.js"></script>
     <script src="app/dialogs/wwaSelectLocationController.js"></script>
 
-    <!-- <script data-require="calendar_mod_ctr.js" data-semver="1" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110131/responsive.js"></script> -->
-    <script data-require="gservice.js" data-semver="1" src="app/services/gservice.js"></script>
-    <script src="app/services/dataService.js"></script>
+    <!-- App Modules JS -->
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/atlas/atlas.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/blogger/blogger.js"></script>
+    <!-- <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/blog/blog.js"></script> -->
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/calendar/calendar_mod_ctr.js"></script>
+    <!-- <script data-require="navbarController.js" data-semver="1" src="app/core/layout/core-back.js"></script> -->
+    <script data-require="navbarController.js" data-semver="1" src="app/core/layout/footerController.js"></script>
+    <script data-require="navbarController.js" data-semver="1" src="app/core/layout/navbarController.js"></script>
+    <script data-require="navbarController.js" data-semver="1" src="app/core/sidebar/mdsb.js"></script>
     <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/calmap/controllers.js"></script>
     <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/calmap/functions.js"></script>
+    <script data-require="eventController.js" data-semver="1" src="app/events/eventController.js"></script>
+    <script data-require="queryController.js" data-semver="1" src="app/events/queryController.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/form/form_md.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/games/games.js"></script>
+    <!-- <script type="text/javascript" src="app/gallery/gallery.js"></script> -->
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/instagram/instagram.js"></script>
+    <!-- <script data-require="itinerary.js" data-semver="1" src="app/itinerary/itinerary.js"></script> -->
+    <script type="text/javascript" src="app/maps/maps.js"></script>
+    <script type="text/javascript" src="app/maps/directions.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/rss/rss.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/rss/rss2.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/todo/todo.js"></script>
+    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/twitter/twitter.js"></script>
+    <!-- <script type="text/javascript" src="app/twitter/ng-twitter.js"></script> -->
     <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/weather/services.js"></script>
     <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/weather/controllers.js"></script>
     <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/weather/filters.js"></script>
     <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/weather/directives.js"></script>
-    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/atlas/atlas.js"></script>
-    <!-- <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/blog/blog.js"></script> -->
-    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/todo/todo.js"></script>
-    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/instagram/instagram.js"></script>
-    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/blogger/blogger.js"></script>
-    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/form/form_md.js"></script>
-    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/rss/rss.js"></script>
-    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/rss/rss2.js"></script>
     <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/wikipedia/wikipedia.js"></script>
-    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/games/games.js"></script>
-    <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/twitter/twitter.js"></script>
     <!-- <script data-require="calendar_mod_ctr.js" data-semver="1" src="app/wikipedia/angular-szn-autocomplete.js"></script> -->
-    <!-- <script type="text/javascript" src="app/twitter/ng-twitter.js"></script> -->
-    <script src="https://cdn.blockspring.com/blockspring.js"></script>
-    <script type="text/javascript" src="app/maps/maps.js"></script>
-    <script type="text/javascript" src="app/maps/directions.js"></script>
-    <!-- <script type="text/javascript" src="app/gallery/gallery.js"></script> -->
+    
+    <!-- Services -->
+    <script data-require="gservice.js" data-semver="1" src="app/services/gservice.js"></script>
+    <script src="app/services/dataService.js"></script>
+    
+
 </head>
 
     <!-- <body data-ng-cloak="">
