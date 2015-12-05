@@ -33,6 +33,7 @@ li { margin-right:1rem; }
         margin-left: auto;
         background-color: #000000 !important;
         height:100vh;
+        overflow: scroll;
     }
 .lead{
   color:#7B5CCB;

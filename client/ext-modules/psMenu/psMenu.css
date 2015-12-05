@@ -20,6 +20,7 @@
     height: 44px;
     font-size: 1.0em;
     padding: 5px;
+    width:100% !important;
 }
 
 .ps-menu-area ul {

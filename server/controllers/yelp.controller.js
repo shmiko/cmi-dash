@@ -12,7 +12,7 @@
 
 
 var _ = require('lodash');
-var Bar = require('./yelp.model');
+var Bar = require('../models/yelp.model');
 var yelpnode = require('yelp');
 
 exports.startAuth = function(req, res) {

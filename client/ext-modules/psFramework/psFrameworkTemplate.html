@@ -24,13 +24,13 @@
     </div>
 </div>
 
-<div class="ps-menu-area"
+<div class="ps-menu-area" 
      ng-show="isMenuVisible"
-     ng-class="{'ps-menu-area-vertical': isMenuVertical, 'ps-menu-area-horizontal': !isMenuVertical}">
+     ng-class="{'ps-menu-area-vertical': isMenuVertical, 'ps-menu-area-horizontal': !isMenuVertical}" layout="vertical">
     <ps-user-profile></ps-user-profile>
     <ng-transclude></ng-transclude>
 </div>
-<nav data-ng-include="'app/core/sidebar/sidebar-right.html'"></nav>
+<nav data-ng-include="'app/core/sidebar/sidebar-right.html'" layout="vertical"></nav>
         
 <div ng-view class="ps-view backgroundI" id="content"
         ng-class="{'ps-view-full-width': !isMenuVertical || !isMenuVisible}">

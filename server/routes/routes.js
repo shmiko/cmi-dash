@@ -5,6 +5,9 @@
 var mongoose        = require('mongoose');
 //var User            = require('../models/user.js');
 var Event            = require('../models/event.js');
+
+// var controller = require('../controllers/yelp.controller');
+
 // define model =================
 var Todo = mongoose.model('Todo', {
     text: String,
@@ -232,4 +235,19 @@ module.exports = function(app) {
         });
     });
 
+    
+
+    // app.get('/api/yelp', controller.index);
+    // app.get('/api/yelp/start/:location', controller.startAuth);
+    // app.get('/api/yelp/:id', controller.show);
+    // app.post('/api/yelp/', controller.create);
+    // app.put('/api/yelp/:id', controller.update);
+    // app.patch('/api/yelp/:id', controller.update);
+    // app.delete('/api/yelp/:id', controller.destroy);
+
 };
+
+
+
+
+

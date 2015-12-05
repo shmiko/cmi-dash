@@ -32,7 +32,7 @@
       "ngMap",
       "psFramework", 
       "ngStorage",
-      "whatstonightApp"
+      "imagegridApp"
     ]);
 
      app.constant('config', {

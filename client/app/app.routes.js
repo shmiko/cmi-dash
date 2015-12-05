@@ -352,6 +352,11 @@ angular.module('app')
                 templateUrl : 'app/yelp/yelp.html',
                 controller: 'yelpController'
             })
+            .state('grid',{
+                url:'/imagegrid',
+                templateUrl : 'app/gallery/imagegrid.html',
+                controller: 'imagegridController'
+            })
             ;
        
         routes.forEach(function (route) {

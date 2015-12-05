@@ -5,9 +5,11 @@
         <h4>{{ description }}</h4>
     </div>
 </header>
+<input class="blogSearch" type="text" ng-model="dataFilter" placeholder="Search..."/></td>
+    
 <section>
 <div class="container-fluid blog-holder">
-    <input class="blogSearch" type="text" ng-model="dataFilter" placeholder="Search..."/></td>
+    <!-- <input class="blogSearch" type="text" ng-model="dataFilter" placeholder="Search..."/></td> -->
     <div class="row postItem text-center" ng-repeat="(key, post) in posts.items | filter: dataFilter">
         <a class="" href="#/post/{{ key }}">
         <p class="blog-holder-catagory">{{ posts.items[key].labels[0] }}</p>

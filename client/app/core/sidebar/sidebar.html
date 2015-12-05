@@ -1,9 +1,22 @@
-<div class="left-sidenav left">
+<!-- <div class="left-sidenav left">
   <div class="left-nav"><div class="left-icon fa fa-home"></div><div class="left-description">Home</div></div>
   <div class="left-nav"><div class="left-icon fa fa-database"></div><div class="left-description">About</div></div>
   <div class="left-nav active"><div class="left-icon fa fa-users"></div><div class="left-description">Clients</div></div>
-</div>
+</div> -->
 <!-- 
 <div class="content">
   This is the main content.
 </div> -->
+
+<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$media('gt-md')">
+   <md-toolbar md-theme="deep-orange">
+       <h2 class="md-toolbar-tools">Menu</h2>
+   </md-toolbar>
+   <md-content ng-controller="menuBar" md-theme="deep-orange">
+       <md-button layout-align="left" ng-repeat="item in items" ui-sref="{{item.location}}" class="menu-item"
+       md-ink-ripple="#bbb" aria-hidden="false"> 
+<!-- the above <md-button> just repeats buttons created in the JS -->
+        <span>{{item.label}}</span>
+       </md-button>
+   </md-content>
+</md-sidenav>
