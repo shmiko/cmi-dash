@@ -197,6 +197,13 @@ angular.module('app')
                     templateUrl : 'app/yelp/yelp.html',
                     controller: 'yelpController'
                 }
+            },
+            {
+                url: '/imagegrid',
+                config: {
+                    templateUrl : 'app/gallery/imagegrid.html',
+                    controller: 'imagegridController'
+                }
             }
   
         ];
