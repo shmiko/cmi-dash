@@ -23,7 +23,7 @@
       "ngMaterial",
       "MyApp",
       "StarterApp",
-      "RSSFeedApp",
+      // "RSSFeedApp",
       "FeedApp",
       "Wikipedia",
       "gamesApp",
@@ -32,7 +32,8 @@
       "ngMap",
       "psFramework", 
       "ngStorage",
-      // "imagegridApp"
+      // "imagegridApp",
+      // "RSSFeedApp"
     ]);
 
      app.constant('config', {
