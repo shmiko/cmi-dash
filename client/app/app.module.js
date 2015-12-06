@@ -32,7 +32,7 @@
       "ngMap",
       "psFramework", 
       "ngStorage",
-      "imagegridApp"
+      // "imagegridApp"
     ]);
 
      app.constant('config', {
